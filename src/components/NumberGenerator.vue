@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <b-field label="Lottery Numbers">
-      <b-input :value="numbers[0] || undefined"></b-input>
-      <b-input :value="numbers[1] || undefined"></b-input>
-      <b-input :value="numbers[2] || undefined"></b-input>
-      <b-input :value="numbers[3] || undefined"></b-input>
-      <b-input :value="numbers[4] || undefined"></b-input>
-      <b-input :value="numbers[5] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[0] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[1] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[2] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[3] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[4] || undefined"></b-input>
+      <b-input size="is-large" :value="numbers[5] || undefined"></b-input>
     </b-field>
     <b-button type="is-primary" @click="generateRandomNumbers"
       >Generate!</b-button
