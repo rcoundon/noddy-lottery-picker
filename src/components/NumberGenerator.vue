@@ -35,18 +35,12 @@ export default {
   },
   methods: {
     generateRandomNumbers() {
-      let number0 = generateRandomNumber(this.numbers);
-      let number1 = generateRandomNumber(this.numbers);
-      let number2 = generateRandomNumber(this.numbers);
-      let number3 = generateRandomNumber(this.numbers);
-      let number4 = generateRandomNumber(this.numbers);
-      let number5 = generateRandomNumber(this.numbers);
-      Vue.set(this.numbers, 0, number0);
-      Vue.set(this.numbers, 1, number1);
-      Vue.set(this.numbers, 2, number2);
-      Vue.set(this.numbers, 3, number3);
-      Vue.set(this.numbers, 4, number4);
-      Vue.set(this.numbers, 5, number5);
+      Vue.set(this.numbers, 0, generateRandomNumber(this.numbers));
+      Vue.set(this.numbers, 1, generateRandomNumber(this.numbers));
+      Vue.set(this.numbers, 2, generateRandomNumber(this.numbers));
+      Vue.set(this.numbers, 3, generateRandomNumber(this.numbers));
+      Vue.set(this.numbers, 4, generateRandomNumber(this.numbers));
+      Vue.set(this.numbers, 5, generateRandomNumber(this.numbers));
     },
   },
 };

@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <number-generator />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import NumberGenerator from './components/NumberGenerator.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    NumberGenerator,
   },
 };
 </script>
