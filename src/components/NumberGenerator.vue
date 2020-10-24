@@ -1,14 +1,16 @@
 <template>
   <div class="container">
-    <b-field>
-      <b-input :value="numbers[0]"></b-input>
-      <b-input :value="numbers[1]"></b-input>
-      <b-input :value="numbers[2]"></b-input>
-      <b-input :value="numbers[3]"></b-input>
-      <b-input :value="numbers[4]"></b-input>
-      <b-input :value="numbers[5]"></b-input>
+    <b-field label="Lottery Numbers">
+      <b-input :value="numbers[0] || undefined"></b-input>
+      <b-input :value="numbers[1] || undefined"></b-input>
+      <b-input :value="numbers[2] || undefined"></b-input>
+      <b-input :value="numbers[3] || undefined"></b-input>
+      <b-input :value="numbers[4] || undefined"></b-input>
+      <b-input :value="numbers[5] || undefined"></b-input>
     </b-field>
-    <b-button @click="generateRandomNumbers">Generate!</b-button>
+    <b-button type="is-primary" @click="generateRandomNumbers"
+      >Generate!</b-button
+    >
   </div>
 </template>
 
@@ -47,19 +49,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+<style scoped></style>
